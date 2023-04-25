@@ -9,61 +9,66 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
+  <!-- LA CONFERENCIA -->
+  <div class="principal" id="conferencia">
     <div class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid header-izq">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <div>
+            <nav class="navbar">
+              <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                  <img src="imagenes/codoacodo.png" alt="" width="80" height="44" class="d-inline-block align-text-center">
+                  <img src="imagenes/codoacodo.png" alt="Logo" width="100" height="50" class="d-inline-block align-text-center">
                   Conf Bs As
                 </a>
-            </div>
-
-            <div class="container-fluid cabecera">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Los oradores</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">El lugar y la fecha</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"  href="#">Conviértete en orador</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"  href="#" style="color:green">Comprar tickets</a>
-                  </li>
-                </ul>
               </div>
-            </div>
-          </nav>
-    </div>
-
-    <div class="contenido">
-        <div class="conferencia">
-            <img src="imagenes/hawaii.jpg" alt="">
-            <div class="contenido-conferencia">
-                <h2>Conf Bs As</h2>
-                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento
-                    de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes
-                    de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!
-                </p>
-                <div class="botones-contenido">
-                  <button type="button" class="boton btn1">Quiero ser orador</button>
-                  <button type="button" class="boton btn2">Comprar tickets</button>
-                </div>
-            </div>
+            </nav>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#conferencia">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#oradores">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#lugar-fecha">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#conviertete">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:green" href="#">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
     </div>
+    
+    <div class="contenido" id="conferencia">
+      <div class="conferencia">
+              <div class="contenido-conferencia">
+                  <h2>Conf Bs As</h2>
+                  <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento
+                      de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes
+                      de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!
+                  </p>
+                  <div class="botones-contenido">
+                    <button type="button" class="boton btn1">Quiero ser orador</button>
+                    <button type="button" class="boton btn2">Comprar tickets</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
-
-    <div class="contenido-tarjetas">
+  <!-- LOS ORADORES -->
+    <div class="contenido-tarjetas" id="oradores">
       <div class="titulos-tarjetas">
         <p>CONOCE A LOS</p>
         <h2>ORADORES</h2>
@@ -111,7 +116,8 @@
       </div>
     </div>
 
-    <div class="tercera">
+    <!-- LUGAR Y FECHA -->
+    <div class="tercera" id="lugar-fecha">
       <div class="tercera-img">
         <img class="tercera-imagen" src="imagenes/honolulu.jpg" alt="">
       </div>
@@ -125,7 +131,8 @@
       </div>
     </div>
 
-    <div class="cuarta">
+    <!-- CONVIERTETE -->
+    <div class="cuarta" id="conviertete">
       <div class="titulos-tarjetas">
         <p>CONVIÉRTETE EN UN</p>
         <h2>ORADOR</h2>
