@@ -20,6 +20,10 @@
 .contenido-conferencia {
     color: white;
     text-align: right;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    width: 50%;
 }
 .boton {
     color: white;
@@ -33,6 +37,12 @@
 .btn2 {
     background-color: rgb(30, 153, 30);
     border: none;
+}
+
+@media screen and (max-width: 576px) {
+    .contenido-conferencia {
+        width: 90%;
+    }
 }
 
 /* LOS ORADORES */
