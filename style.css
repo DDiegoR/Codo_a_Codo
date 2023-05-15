@@ -18,13 +18,6 @@
     flex-grow: 0 !important;
 }
 .contenido-conferencia {
-    /* position: absolute;
-    top: 50%;
-    left: 55%;
-    right: 10%; */
-    width: 35%;
-    float: right;
-    margin: 15% 10% 0 0;
     color: white;
     text-align: right;
 }
@@ -58,8 +51,8 @@
 }
 .tarjetas {
     display: flex;
-    flex-direction: row;
-    padding: 0 12%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .tarjeta {
     width: 100%;
@@ -126,15 +119,17 @@
 .tercera {
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
 }
 .tercera-img {
-    width: 220%;
+    width: 100%;
 }
 .tercera-imagen {
     width: 100%;
     border: 1px solid rgb(211, 208, 208);
 }
 .tercera-texto {
+    width: 100%;
     background: #353a40;
     color: white;
     padding: 10px;
@@ -145,6 +140,12 @@
 }
 .tercera-texto p {
     font-size: 15px;
+}
+
+@media screen and (max-width: 870px) {
+    .tercera {
+        display: block;
+    }
 }
 
 /* CONVIERTETE */
@@ -163,7 +164,16 @@
     border-radius: 5px;
     padding: 5px;
 }
+@media screen and (max-width: 768px) {
+    .campos {
+        display: block !important;
+    }
+    .campo {
+        margin: 3px 0 !important;
+    }
+}
 
+/* FOOTER */
 .footer {
     background-color: #224a62;
     padding: 20px 0;
@@ -183,4 +193,17 @@
 .lista-footer a {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .lista-footer {
+        display: block;
+        width: 100%;
+        font-size: 12px;
+    }
+    .lista-footer li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
 }
