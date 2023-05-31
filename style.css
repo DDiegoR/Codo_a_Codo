@@ -4,6 +4,11 @@
     background-size: cover;
     height: 100vh;
 }
+.header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
 .header>.navbar {
     padding: 0 4% !important;
 }
@@ -180,6 +185,43 @@
     .campo {
         margin: 3px 0 !important;
     }
+}
+
+/* TICKETS */
+.tickets {
+    margin: auto;
+    padding: 100px 25%;
+}
+.tickets .card {
+    border-radius: 0px;
+}
+.descuentos {
+    text-align: center;
+}
+.descuento {
+    margin: 0 5px;
+}
+.tickets .card-body h6 {
+    margin: 20px 0;
+}
+.requisito {
+    font-size: 12px;
+    margin: 0;
+}
+.titulos_tickets {
+    text-align: center;
+}
+.titulos_tickets h6{
+    font-weight: 200;
+    margin-top: 10px;
+}
+.total {
+    display: flex;
+    background: #b1defc;
+    color: #2788c9;
+    padding: 10px;
+    margin: 30px 0;
+    border-radius: 5px;
 }
 
 /* FOOTER */
